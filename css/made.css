@@ -1,0 +1,393 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  color: var(--main-color);
+}
+
+:root {
+  --black-color: #2e2f42;
+  --white-color: #ffffff;
+  --ocean-blue: #404bbf;
+  --milk-color: #f4f4fd;
+  --sky-blue: #4d5ae5;
+  --main-color: #434455;
+  --btns-color: #e7e9fc;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/** ----------------------------HEADER----------------------------- */
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  align-items: center;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--sky-blue);
+  text-transform: uppercase;
+  align-items: center;
+  margin-right: 76px;
+}
+
+.header-logo-link {
+  color: var(--black-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  margin-left: 76px;
+  gap: 40px;
+}
+
+.header-menu-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--black-color);
+  padding: 24px 0 24px;
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: var(--ocean-blue);
+}
+
+.header-address {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-address-link {
+  color: var(--main-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.header-address-link:hover,
+.header-address-link:focus {
+  color: var(--ocean-blue);
+}
+
+.addreses {
+  font-style: normal;
+  align-items: center;
+}
+
+/** -------------SECTION 1------------------ */
+
+.hero {
+  padding: 188px 0;
+}
+
+.hero-container {
+  background-color: var(--black-color);
+
+  height: 600px;
+  max-width: 1440px;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  text-align: center;
+  max-width: 496px;
+  margin-bottom: 45px;
+}
+
+.hero-btn {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  color: var(--white-color);
+  background-color: var(--sky-blue);
+  border: none;
+  border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  display: block;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--ocean-blue);
+}
+
+/** -------------SECTION 2----------------- */
+
+.benefits {
+  padding: 120px 0;
+}
+
+.benefits-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.benefits-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--black-color);
+  margin-bottom: 8px;
+  text-align: center;
+}
+.benefits-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.benefits-list {
+  display: flex;
+  gap: 24px;
+}
+/** --------------SECTION 3-------------- */
+
+img {
+  display: block;
+}
+
+.doing {
+  padding-bottom: 120px;
+}
+
+.doing-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--black-color);
+  margin-bottom: 72px;
+}
+
+.doing-list {
+  display: flex;
+  padding-bottom: 120px;
+  gap: 24px;
+}
+
+.team-title {
+  padding-top: 120px;
+}
+
+.team-list {
+  display: flex;
+  padding-bottom: 120px;
+  gap: 24px;
+}
+
+/** ----------------SECTION 4-----------------  */
+
+.team {
+  background-color: var(--milk-color);
+  padding: 120px 0;
+}
+
+.team-list-item {
+  background-color: var(--white-color);
+  padding-bottom: 32px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list {
+}
+
+.team-person {
+  padding: 32px 16px;
+}
+
+.team-subtitle {
+  width: calc((100% - 72px) / 4);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.team-text {
+  text-align: center;
+}
+
+/**------------------FOOTER----------------- */
+
+.footer {
+  padding: 100px 0;
+}
+
+.footer-container {
+  background-color: var(--black-color);
+  max-width: 1440px;
+  height: 312px;
+  padding: 100px 1020px 101px 156px;
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--sky-blue);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-logo-link {
+  color: var(--milk-color);
+}
+
+.footer-text {
+  color: var(--milk-color);
+}
+
+/** ----------------PORTFOLIO SECTION LIST 1------------ */
+
+.port-btns-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--sky-blue);
+  background-color: var(--milk-color);
+  border: 1px solid #e7e9fc;
+  cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid var(--btns-color);
+  border-radius: 4px;
+}
+
+.port-btns-link:hover {
+  color: var(--white-color);
+  background-color: var(--ocean-blue);
+  border: 1px solid transparent;
+}
+.port-btns-link:focus {
+  color: var(--white-color);
+  background-color: var(--ocean-blue);
+  border: 1px solid transparent;
+}
+
+.header-menu-link-port {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--black-color);
+  padding: 24px 0;
+}
+
+.header-menu-link-port:hover,
+.header-menu-link-port:focus {
+  color: var(--ocean-blue);
+}
+
+.section-port {
+  padding: 96px 0 120px 0;
+}
+
+.port-btns-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+/**--------------------------IMAGES--------------------------- */
+
+.images-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.images-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.images-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.images-subtitle {
+  margin-bottom: 8px;
+}
