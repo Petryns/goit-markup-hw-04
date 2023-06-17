@@ -497,3 +497,21 @@ img {
 .images-subtitle {
   margin-bottom: 8px;
 }
+
+.cashless-payment {
+  position: relative;
+  background: #4d5ae5;
+}
+
+.images-item:hover .cashless-payment {
+  transform: translate(0);
+}
+
+.cashless-payment-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
