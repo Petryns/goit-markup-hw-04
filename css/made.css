@@ -101,7 +101,11 @@ h6 {
   position: relative;
 }
 
-.header-menu-link::after {
+.header-studio-link {
+  color: var(--ocean-blue);
+}
+
+.header-studio-link::after {
   content: "";
   position: absolute;
   left: 0;
