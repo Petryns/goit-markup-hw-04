@@ -358,17 +358,23 @@ img {
   text-align: center;
 }
 
+.team-person-icon {
+  fill: #f4f4fd;
+}
+
 .team-soc-list {
   display: flex;
   gap: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
+  list-style-type: none;
 }
 
 .team-soc-item {
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link {
@@ -377,6 +383,13 @@ img {
   background-color: #4d5ae5;
   border-radius: 50%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: #404bbf;
 }
 
 /** ---------------------SECTION 5----------------- */
