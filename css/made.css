@@ -395,6 +395,7 @@ img {
 /** ---------------------SECTION 5----------------- */
 
 .customers {
+  padding: 120px 0;
 }
 
 .customers-container {
@@ -429,6 +430,8 @@ img {
 }
 
 .customerd-item {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
 }
 
 /**------------------FOOTER----------------- */
