@@ -742,6 +742,11 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.images-list-link:hover .cashless-payment-text,
+.images-list-link:focus .cashless-payment-text {
+  transform: translateY(0%);
+}
+
 .cashless-payment-container {
   position: relative;
   overflow: hidden;
