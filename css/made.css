@@ -683,7 +683,6 @@ img {
 .images-item {
   width: calc((100% - 48px) / 3);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: hidden;
 }
 
 .images-text {
@@ -714,7 +713,7 @@ img {
   margin-bottom: 8px;
 }
 
-.images-item:hover .cashless-payment-container {
+.images-item:hover .cashless-payment {
   transform: translate(0);
 }
 
@@ -732,22 +731,22 @@ img {
 
 .cashless-payment-container {
   position: relative;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  top: 0;
-  padding: 40px 32px;
-  background-color: #4d5ae5;
-  height: 100%;
-  width: 100%;
+  overflow: hidden;
 }
 
 .cashless-payment-text {
   position: absolute;
-
+  top: 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /**----------------FOOTER PORTFOLIO-------------------  */
